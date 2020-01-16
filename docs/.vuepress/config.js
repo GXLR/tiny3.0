@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Tiny3.0', 
     description:"让移动开发更简单易用 高效 原生技术 极致体验",
-    base: '/', // 项目根路径
+    base: '/tiny3.0', // 项目根路径
     themeConfig: {
         nav: [
             { text: '主页', link: '/' },
