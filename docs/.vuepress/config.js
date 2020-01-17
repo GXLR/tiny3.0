@@ -49,7 +49,8 @@ module.exports = {
               children: [
                 '/Tags/advert', 
                 '/Tags/mvvm',
-                '/Tags/page'
+                '/Tags/page',
+                '/Tags/Flex'
               ]
             }
           ]
