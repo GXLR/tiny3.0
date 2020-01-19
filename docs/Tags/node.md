@@ -17,9 +17,7 @@ Tiny3.0支持nodeJS开发，以支持前端代码的复用
 
 3、添加公司npm私服，nrm add registry http://10.25.0.188:4873/，按照步骤设置账户密码邮箱   
 
-4、安装tinypack，tiny3.0的打包工具, npm install -g tinypack
-
-5、安装VSCode插件，搜索Tiny3.0IDE，安装插件并重启
+4、安装VSCode插件，搜索Tiny3.0IDE，安装插件并重启
 
 ***
 ### Tiny3.0 node开发教程
@@ -29,13 +27,13 @@ Tiny3.0支持nodeJS开发，以支持前端代码的复用
 **1.初始化项目**  
 npm init，按照步骤初始化项目配置信息  
 
-![avatar](/project.png)
+![avatar](project.png)
 
 **2.开发项目**  
 
-![avatar](/develop2.png)
+![avatar](develop2.png)
 
-![avatar](/develop.png)
+![avatar](develop.png)
 
 **3.发布项目**  
 
@@ -53,16 +51,18 @@ npm init，按照步骤初始化项目配置信息
 
 使用npm install tools --save，其中tools为你之前发布的前端库名称
 
-![avatar](/quote.png)
+![avatar](quote.png)
 
 **2.使用库函数**
 
-![avatar](/use.png)
+![avatar](use.png)
 
 **3.IDE开发**
 
-在tml后缀的文件下上下文菜单中，使用Start Tml Server3.0，即可像以前一样使用IDE热开发
-![avatar](/IDE.png)
+1)、安装tinypack，tiny3.0的IDE工具, npm install tinypack -D
+
+2)、在tml后缀的文件下上下文菜单中，使用Start Tml Server3.0，即可像以前一样使用IDE热开发
+![avatar](IDE.png)
 
 
 #### 注意事项
