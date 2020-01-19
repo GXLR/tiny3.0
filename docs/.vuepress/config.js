@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'Tiny3.0', 
+    title: 'Tiny3.0',
     description:"让移动开发更简单易用 高效 原生技术 极致体验",
     themeConfig: {
         nav: [
@@ -11,47 +11,48 @@ module.exports = {
         smoothScroll: true,
         sidebar: [
             {
-              title: 'Tags',
-              collapsable: true,
-              children: [
-                '/Tags/tml',
-                '/Tags/body',
-                '/Tags/head',
-                '/Tags/script',
-                '/Tags/style',
-                '/Tags/input',
-                '/Tags/label',
-                '/Tags/list',
-                '/Tags/scroller',
-                '/Tags/paging',
-                '/Tags/image',
-                '/Tags/select',
-                '/Tags/webview'
-               ]
+                title: 'Tags',
+                collapsable: true,
+                children: [
+                    '/Tags/tml',
+                    '/Tags/body',
+                    '/Tags/head',
+                    '/Tags/script',
+                    '/Tags/style',
+                    '/Tags/input',
+                    '/Tags/label',
+                    '/Tags/list',
+                    '/Tags/scroller',
+                    '/Tags/paging',
+                    '/Tags/image',
+                    '/Tags/select',
+                    '/Tags/webview'
+                ]
             },
             {
-              title: 'TinyJS',
-              children: [
-                '/Tags/system', 
-                '/Tags/window',
-                '/Tags/navigator',
-                '/Tags/encrypt',
-                '/Tags/document',
-                '/Tags/element',
-                '/Tags/request',
-                '/Tags/Multipicker', 
-                '/Tags/actionsheet'
-              ]
+                title: 'TinyJS',
+                children: [
+                    '/Tags/system',
+                    '/Tags/window',
+                    '/Tags/navigator',
+                    '/Tags/encrypt',
+                    '/Tags/document',
+                    '/Tags/element',
+                    '/Tags/request',
+                    '/Tags/Multipicker',
+                    '/Tags/actionsheet'
+                ]
             },
             {
-              title: '其他',
-              children: [
-                '/Tags/advert', 
-                '/Tags/mvvm',
-                '/Tags/page',    
-                '/Tags/Flex'
+                title: '其他',
+                children: [
+                    '/Tags/advert',
+                    '/Tags/mvvm',
+                    '/Tags/page',
+                    '/Tags/Flex',
+                    '/Tags/node'
                 ]
             }
-          ]
+        ]
     }
 }
