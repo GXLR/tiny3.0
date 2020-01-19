@@ -13,11 +13,17 @@ Tiny3.0支持nodeJS开发，以支持前端代码的复用
 * nrm ls: 显示所有npm服务器  
 * nrm add registry url: 添加私服
 * nrm del registry: 删除私服  
-* nrm test registry: 测试私服连通性  
+* nrm test registry: 测试私服连通性 
+* nrm use registry: 切换为私服 
 
-3、添加公司npm私服，nrm add registry http://10.25.0.188:4873/，按照步骤设置账户密码邮箱   
+3、添加公司npm私服，nrm add registry http://10.25.0.188:4873/，按照步骤设置账户密码邮箱，然后使用nrm use registry切换为公司私服   
 
 4、安装VSCode插件，搜索Tiny3.0IDE，安装插件并重启
+
+依赖版本：
+
+node -v  12.14.1   
+npm -v  6.13.4  
 
 ***
 ### Tiny3.0 node开发教程
@@ -64,6 +70,11 @@ npm init，按照步骤初始化项目配置信息
 2)、在tml后缀的文件下上下文菜单中，使用Start Tml Server3.0，即可像以前一样使用IDE热开发
 ![avatar](/IDE.png)
 
+#### nodeJS实例
+
+gitlab:https://p.mtiny.cn:9443/Tiny3.0/TmlExample
+
+clone之后，使用npm install安装依赖包
 
 #### 注意事项
 
