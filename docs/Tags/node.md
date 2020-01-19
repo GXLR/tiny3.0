@@ -18,7 +18,9 @@ Tiny3.0支持nodeJS开发，以支持前端代码的复用
 
 3、添加公司npm私服，nrm add registry http://10.25.0.188:4873/，按照步骤设置账户密码邮箱，然后使用nrm use registry切换为公司私服   
 
-4、安装VSCode插件，搜索Tiny3.0IDE，安装插件并重启
+4、安装tinypack，tiny3.0的IDE工具, npm install tinypack -g
+
+5、安装VSCode插件，搜索Tiny3.0IDE，安装插件并重启
 
 依赖版本：
 
