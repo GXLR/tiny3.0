@@ -50,7 +50,8 @@ module.exports = {
                     '/Tags/mvvm',
                     '/Tags/page',
                     '/Tags/Flex',
-                    '/Tags/node'
+                    '/Tags/node',
+                    '/Tags/tinyBuilder'
                 ]
             }
         ]
