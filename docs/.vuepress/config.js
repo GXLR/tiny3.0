@@ -51,7 +51,8 @@ module.exports = {
                     '/Tags/page',
                     '/Tags/Flex',
                     '/Tags/node',
-                    '/Tags/tinyBuilder'
+                    '/Tags/tinyBuilder',
+                    '/Tags/TinyList'
                 ]
             }
         ]

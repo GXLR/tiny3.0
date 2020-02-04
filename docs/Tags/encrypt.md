@@ -2,7 +2,7 @@
 
 ### 描述
 
-Tiny 提供了 Encrypt 类加密解密的操作，支持md5、base64、rsa 等算法。
+Tiny 提供了 Encrypt 类加密解密的操作，支持sha256、base64、rsa、aes、sm2、sm4等算法。
 
 ### 方法
  
