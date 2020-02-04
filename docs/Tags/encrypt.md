@@ -33,33 +33,8 @@ Tiny 提供了 Encrypt 类加密解密的操作，支持sha256、base64、rsa、
       <td></td>
    </tr>
    <tr>
-      <td><a href="#6F">MD5</a></td>
-      <td>md5</td>
-      <td></td>
-   </tr>
-   <tr>
       <td><a href="#7F">signatureRsaWithText</a></td>
       <td>rsa加签</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td><a href="#9F">encryptStringBy3DES</a></td>
-      <td>3des加密</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td><a href="#10F">decryptStringBy3DES</a></td>
-      <td>3des解密</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td><a href="#11F">encryptStringByDES</a></td>
-      <td>des加密</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td><a href="#12F">decryptStringByDES</a></td>
-      <td>des解密</td>
       <td></td>
    </tr>
    <tr>
@@ -197,18 +172,6 @@ base64 解密
 * privateKey:rsa私钥
 
 ***
-		
-#### <a name="6F"> MD5 </a>
-
-转成md5值
-
-	encrypt.MD5(input)
-
-##### params
-
-* input:原文
-
-***
 
 #### <a name="7F"> signatureRsaWithText </a>
 
@@ -224,58 +187,6 @@ base64 解密
 ##### return
 
 * return:rsa签名结果
-
-***
-
-#### <a name="9F"> encryptStringBy3DES </a>
-
-使用3des加密
-
-	encrypt.encryptStringBy3DES(input, key)
-
-##### params
-
-* input:明文
-* key:密钥
-
-***
-
-#### <a name="10F"> decryptStringBy3DES </a>
-
-使用3des解密
-
-	encrypt.decryptStringBy3DES(input, key)
-
-##### params
-
-* input:密文
-* key:密钥
-
-***
-
-#### <a name="11F"> encryptStringByDES </a>
-
-使用des加密
-
-	encrypt.encryptStringByDES(input, key)
-
-##### params
-
-* input:明文
-* key:密钥
-
-***
-
-#### <a name="12F"> decryptStringByDES </a>
-
-使用des解密
-
-	encrypt.decryptStringByDES(input, key)
-
-##### params
-
-* input:密文
-* key:密钥
 
 ***
 
