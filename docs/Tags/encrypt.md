@@ -73,7 +73,7 @@ Tiny 提供了 Encrypt 类加密解密的操作，支持sha256、base64、rsa、
       <td></td>
    </tr>
    <tr>
-      <td><a href="#20F">sm2Derypt</a></td>
+      <td><a href="#20F"> sm2Decode </a></td>
       <td>sm2解密</td>
       <td></td>
    </tr>
