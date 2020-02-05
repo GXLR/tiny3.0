@@ -23,43 +23,43 @@ Tiny 提供了 Encrypt 类加密解密的操作，支持sha256、base64、rsa、
       <td></td>
    </tr>
    <tr>
-      <td><a href="#4F">rsaEncryptString</a></td>
+      <td><a href="#4F">rsaEncode</a></td>
       <td>rsa加密</td>
       <td></td>
    </tr>
    <tr>
-      <td><a href="#5F">rsaDecryptString</a></td>
+      <td><a href="#5F">rsaDecode</a></td>
       <td>rsa解密</td>
       <td></td>
    </tr>
    <tr>
-      <td><a href="#7F">signatureRsaWithText</a></td>
+      <td><a href="#7F">rsaSign</a></td>
       <td>rsa加签</td>
       <td></td>
    </tr>
    <tr>
-      <td><a href="#13F">aesgcmEncryptString</a></td>
+      <td><a href="#13F">aesGcmEncode</a></td>
       <td>aesgcm加密</td>
       <td></td>
    </tr>
    <tr>
-      <td><a href="#14F">aesgcmDecryptString</a></td>
+      <td><a href="#14F">aesGcmDecode</a></td>
       <td>aesgcm解密</td>
       <td></td>
    </tr>
    <tr>
-      <td><a href="#15F">aesEncryptString</a></td>
+      <td><a href="#15F">aesEncode</a></td>
       <td>aes加密</td>
       <td></td>
    </tr>
    <tr>
-      <td><a href="#16F">aesDecryptString</a></td>
+      <td><a href="#16F">aesDecode</a></td>
       <td>aes解密</td>
       <td></td>
    </tr>
    <tr>
-      <td><a href="#17F">hmacSHA256</a></td>
-      <td>hmacSHA256加密</td>
+      <td><a href="#17F">HmacSHA256</a></td>
+      <td>HmacSHA256加密</td>
       <td></td>
    </tr>
    <tr>
@@ -68,7 +68,7 @@ Tiny 提供了 Encrypt 类加密解密的操作，支持sha256、base64、rsa、
       <td></td>
    </tr>
    <tr>
-      <td><a href="#19F">sm2Encrypt</a></td>
+      <td><a href="#19F">sm2Encode</a></td>
       <td>sm2加密</td>
       <td></td>
    </tr>
@@ -78,18 +78,28 @@ Tiny 提供了 Encrypt 类加密解密的操作，支持sha256、base64、rsa、
       <td></td>
    </tr>
    <tr>
-      <td><a href="#21F">sm3</a></td>
+      <td><a href="#21F">sm3Encode</a></td>
       <td>sm3加签</td>
       <td></td>
    </tr>
    <tr>
-      <td><a href="#22F">SM4Encrypt</a></td>
+      <td><a href="#22F">sm4Encode</a></td>
       <td>sm4加密</td>
       <td></td>
    </tr>
    <tr>
-      <td><a href="#23F">SM4Decrypt</a></td>
+      <td><a href="#23F">sm4Decode</a></td>
       <td>sm4解密</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td><a href="#24F">urlEncode</a></td>
+      <td>url编码</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td><a href="#25F">urlDecode</a></td>
+      <td>url解码</td>
       <td></td>
    </tr>
 </table>
@@ -136,11 +146,11 @@ base64 解密
 	var md5value = encrypt.base64Decode(value)// 对上例中加密的结果value值执行解压函数	
 ***
 
-#### <a name="4F"> rsaEncryptString </a>
+#### <a name="4F"> rsaEncode </a>
 
 使用rsa公钥加密
 
-	encrypt.rsaEncryptString(input, publicKey)
+	encrypt.rsaEncode(input, publicKey)
 
 ##### params
 
@@ -155,16 +165,16 @@ base64 解密
 	 		var publicKey = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDZ2eDry6u5fEj0e3ONOjN06PVWWpVC18JsA2fcAoHLhgiRIynK6b67yZoXD5la5ZGzq/n4BPLYoZqZUbN92DdySDVamypYIlqwvvBNq47Mla3hT/gSOZBiUTRiJbj3ernXnH6ol3vx6CZKsNm91aAIzJPw3ZmbUn1XOPPEZ0gFWQIDAQAB";
 
 	 		var encrypt = new Encrypt();
-	 		var rsaValue = encrypt.rsaEncryptString(value, publicKey)
+	 		var rsaValue = encrypt.rsaEncode(value, publicKey)
 		}
 		
 ***
 		
-#### <a name="5F"> rsaDecryptString </a>
+#### <a name="5F"> rsaDecode </a>
 
 使用rsa私钥解密
 
-	encrypt.rsaDecryptString(input, privateKey)
+	encrypt.rsaDecode(input, privateKey)
 
 ##### params
 
@@ -173,11 +183,11 @@ base64 解密
 
 ***
 
-#### <a name="7F"> signatureRsaWithText </a>
+#### <a name="7F"> rsaSign </a>
 
 使用rsa私钥签名
 
-	encrypt.signatureRsaWithText(input, privateKey)
+	encrypt.rsaSign(input, privateKey)
 
 ##### params
 
@@ -190,11 +200,11 @@ base64 解密
 
 ***
 
-#### <a name="13F"> aesgcmEncryptString </a>
+#### <a name="13F"> aesGcmEncode </a>
 
 使用aesgcm加密
 
-	encrypt.aesgcmEncryptString(input, key, iv)
+	encrypt.aesGcmEncode(input, key, iv)
 
 ##### params
 
@@ -204,11 +214,11 @@ base64 解密
 
 ***
 
-#### <a name="14F"> aesgcmDecryptString </a>
+#### <a name="14F"> aesGcmDecode </a>
 
 使用aesgcm解密
 
-	encrypt.aesgcmDecryptString(input, key, iv)
+	encrypt.aesGcmDecode(input, key, iv)
 
 ##### params
 
@@ -218,11 +228,11 @@ base64 解密
 
 ***
 
-#### <a name="15F"> aesEncryptString </a>
+#### <a name="15F"> aesEncode </a>
 
 使用aes加密
 
-	encrypt. aesEncryptString(input, key, iv)
+	encrypt. aesEncode(input, key, iv)
 
 ##### params
 
@@ -232,11 +242,11 @@ base64 解密
 
 ***
 
-#### <a name="16F"> aesDecryptString </a>
+#### <a name="16F"> aesDecode </a>
 
 使用aes解密
 
-	encrypt.aesDecryptString(input, key, iv)
+	encrypt.aesDecode(input, key, iv)
 
 ##### params
 
@@ -246,11 +256,11 @@ base64 解密
 
 ***
 
-#### <a name="17F"> hmacSHA256 </a>
+#### <a name="17F"> HmacSHA256 </a>
 
-使用hmacSHA256加密
+使用HmacSHA256加密
 
-	encrypt.hmacSHA256(input, key)
+	encrypt.HmacSHA256(input, key)
 
 ##### params
 
@@ -271,11 +281,11 @@ base64 解密
 
 ***
 
-#### <a name="19F">SM2Encrypt</a>
+#### <a name="19F">sm2Encode</a>
 
 使用sm2公钥加密
 
-	encrypt.SM2Encrypt(input, publicKey)
+	encrypt.sm2Encode(input, publicKey)
 
 ##### params
 
@@ -287,15 +297,15 @@ base64 解密
 * return:sm2加密结果
 
 		var key = "04DC7327738C66D01970B40CE2084B7F44FFFF3A90789BEDA407D8B85BCF1296551919B21662EE586444696705AAF85FF7156AC64EC204341EB4FA705E5A551E56";
-		var tmp = encrypt.SM2Encrypt(value, key);
+		var tmp = encrypt.sm2Encode(value, key);
 
 ***
 
-#### <a name="20F">SM2Decrypt</a>
+#### <a name="20F">sm2Decode</a>
 
 使用sm2私钥解密
 
-	encrypt.SM2Decrypt(input, privateKey)
+	encrypt.sm2Decode(input, privateKey)
 
 ##### params
 
@@ -307,15 +317,15 @@ base64 解密
 * return:sm2解密结果
 
 		var key = "7F17B17EABB73E81310D1EC734E30933A5E43096DFB2DA578BA12E3C07DCBABE";
-		var tmp = encrypt.SM2Decrypt(value, key);
+		var tmp = encrypt.sm2Decode(value, key);
 
 ***
 
-#### <a name="21F">SM3</a>
+#### <a name="21F">sm3Encode</a>
 
 sm3消息摘要
 
-	encrypt.SM3(input)
+	encrypt.sm3Encode(input)
 
 * input:加签内容
 
@@ -326,15 +336,15 @@ sm3消息摘要
 #### 示例： ####
 
 	var encrypt = new Encrypt();      
-	var sm3value = encrypt.SM3(value);
+	var sm3value = encrypt.sm3Encodesm4Encode(value);
 
 ***
 
-#### <a name="22F">SM4Encrypt</a>
+#### <a name="22F">sm4Encode</a>
 
 sm4 加密
 
-	encrypt.SM4Encrypt(input, key)
+	encrypt.sm4Encode(input, key)
 
 ##### params
 
@@ -348,15 +358,15 @@ sm4 加密
 #### 示例 ####
 
 	var key = "0123456789abcdeffedcba9876543210";
-	var tmp = encrypt.SM4Encrypt(value, key);
+	var tmp = encrypt.sm4Encode(value, key);
 
 ***
 
-#### <a name="23F"> SM4Decrypt</a>
+#### <a name="23F"> sm4Decode</a>
 
 sm4 解密
 
-	encrypt.SM4Decrypt(input, key)
+	encrypt.sm4Decode(input, key)
 
 ##### params
 
@@ -370,5 +380,29 @@ sm4 解密
 #### 示例 ####
 
 	var key = "0123456789abcdeffedcba9876543210"
-	var tmp = encrypt.SM4Decrypt(value, key);
+	var tmp = encrypt.sm4Decode(value, key);
+	
+***
+	
+#### <a name="24F"> urlEncode</a>
+
+url编码
+
+	encrypt.urlEncode(input)
+
+##### return
+
+* return:编码结果
+
+***
+
+#### <a name="25F"> urlDecode</a>
+
+url解码
+
+	encrypt.urlDecode(input)
+
+##### return
+
+* return:解码结果
 
