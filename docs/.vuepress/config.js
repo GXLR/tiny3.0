@@ -15,6 +15,7 @@ module.exports = {
                 collapsable: true,
                 children: [
                     '/Tags/tml',
+                    '/Tags/div',
                     '/Tags/body',
                     '/Tags/head',
                     '/Tags/script',
