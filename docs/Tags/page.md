@@ -210,10 +210,18 @@ url为界面名，界面名需要独一无二  如login.tml
 ### 前端调用方法
 ---
 前向跳转
-Window.forward(callback)
+Window.forward( );
+回调写法
+Window.forward(function(data){     data为状态码
+                    
+            });
 
 反向后退
-Window.backward(callback)
+Window.backward( );
+回调写法
+Window.backward(function(data){     data为状态码
+                    
+            });
 
 #### 更新方式
 采用资源更新方式，资源更新后优先读取资源更新的目录。
