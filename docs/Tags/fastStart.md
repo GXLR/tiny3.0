@@ -23,7 +23,6 @@
 ide 启动server 后，app 测试包通过udp协议访问到ide，就行开发测试，无需为app 打包特定的 ip 地址。    
 ide 的tml，js，css 修改后，支持app动态刷新，不需要再手动刷新app，或者绕到上一个页面，再返回。方便开发，提供开发效率。  
 ide 的server 要求app访问的页面且固定为nav.tml。
-tiny支持pc模拟器测试，无需手机即可测试。 需要下载tiny 模拟器，并把tiny 模拟器包放置在ide 对应的workspace 目录下，通过ide 的tiny 菜单—启动模拟器，启动模拟器就行测试。  
 
 ### 4.2 IDE 的更新升级
 VSCode里面直接搜索Tinyide,检索tinyide的版本，根据需要更新

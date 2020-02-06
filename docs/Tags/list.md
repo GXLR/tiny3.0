@@ -46,9 +46,9 @@ tml配置如下：
     <listview id="listview" refreshTop="false" /> 
 js内部添加下拉刷新执行的事件:
 $('listview').addEventListener('top', function(){
-    $('listview').stopUpdate();
+    $('listview').endRefreshTop();
 });
-⚠️：下拉刷新执行的事件，在调用结束后需要调用$('listview').stopUpdate(),用以结束下拉刷新的状态
+⚠️：下拉刷新执行的事件，在调用结束后需要调用$('listview').endRefreshTop(),用以结束下拉刷新的状态
 ```
 
 **
@@ -63,9 +63,9 @@ tml配置如下：
     <listview id="listview" refreshBottom="false" /> 
 js内部添加下拉刷新执行的事件:
 $('listview').addEventListener('bottom', function(){
-    $('listview').stopLoadMore();
+    $('listview').endRefreshBottom();
 });
-⚠️：下拉刷新执行的事件，在调用结束后需要调用$('listview').stopLoadMore(),用以结束上拉加载的状态
+⚠️：下拉刷新执行的事件，在调用结束后需要调用$('listview').endRefreshBottom(),用以结束上拉加载的状态
 ```
 
 ### 5 头部视图 listHead
