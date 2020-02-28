@@ -449,16 +449,15 @@ Window 对象为tiny 内置对象，提供一些程序设备相关的基本操�
 
 设置定时器<br />
 
-	var id = Window.setInterval(callback, delayPeriod ,period)
+	var id = Window.setInterval(callback, period)
 
 setInterval 只会执行回调函数一次，不过 setInterval 会每隔 X 毫秒执行函数一次。想要清除这个定时器，可以使用 clearInterval 方法。
 
 ##### params
 
 * callback:定时执行的callback方法
-* delayPeriod:延迟时间 单位毫秒
 * period:时间 单位毫秒
-* 
+
 ##### return
 
 * id:定时器id
