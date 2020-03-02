@@ -38,13 +38,11 @@ npm -v  6.13.4
 **1.初始化项目**  
 npm init，按照步骤初始化项目配置信息  
 
-![avatar](/project.png)
+ < img :src="$withBase('/project.png')" alt="avatar">
 
 **2.开发项目**  
-
-![avatar](/develop2.png)
-
-![avatar](/develop.png)
+ < img :src="$withBase('/develop2.png')" alt="avatar">
+ < img :src="$withBase('/develop.png')" alt="avatar">
 
 **3.发布项目**  
 
@@ -63,17 +61,19 @@ npm init，按照步骤初始化项目配置信息
 使用npm install tools --save，其中tools为你之前发布的前端库名称
 
 ![avatar](/quote.png)
+ < img :src="$withBase('/quote.png')" alt="avatar">
 
 **2.使用库函数**
 
-![avatar](/use.png)
+ < img :src="$withBase('/use.png')" alt="avatar">
 
 **3.IDE开发**
 
 1)、安装tinypack，tiny3.0的IDE工具, npm install tinypack -D
 
 2)、在tml后缀的文件下上下文菜单中，使用Start Tml Server3.0，即可像以前一样使用IDE热开发  
-![avatar](/IDE.png)
+
+ < img :src="$withBase('/IDE.png')" alt="avatar">
 
 #### nodeJS实例
 
@@ -84,8 +84,7 @@ clone之后，使用npm install安装依赖包
 #### 前端组件化开发
 
 **1.发布组件包**
-
-![avatar](component.png)
+ < img :src="$withBase('/component.png')" alt="avatar">
 
 **component格式必须保持一致**,name及dom均为关键字，不可更改
 
@@ -94,11 +93,10 @@ clone之后，使用npm install安装依赖包
 * 使用npm install tmlDemo --save，其中tmlDemo为你之前发布的前端库名称
 * 在tml中添加引用的组件包名
 
-![avatar](component2.png)
+ < img :src="$withBase('/component2.png')" alt="avatar">
 
 * 在对应的js中添加引用的组件名
-
-![avatar](component3.png)
+ < img :src="$withBase('/component3.png')" alt="avatar">
 
 **3.注意事项**
 

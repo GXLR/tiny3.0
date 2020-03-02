@@ -1,9 +1,9 @@
 #快速上手
 ## 1 准备IDE环境  
 首先需要下载VisualStudioCode,附上[官网地址](https://code.visualstudio.com/)。
-![vscodeHttp](/vscode-http.jpg)  
+< img :src="$withBase('/vscode-http.jpg')" alt="vscodeHttp">
 下载完成安装之后在vscode插件中搜索tinyIDE并安装。  
-![installIde](/vscode-install-ide.jpg)  
+< img :src="$withBase('/vscode-install-ide.jpg')" alt="installIde">
 步骤  
 1. 点击插件tab  
 2. 搜索**tinyide**  
@@ -16,8 +16,8 @@
 ## 3 运行demo工程  
  下载[tml demo](https://p.mtiny.cn:9443/laijp/Tiny3.0TmlExample) ，下载完成后在VScode中打开。  
  启动tml服务 nav.tml文件- 右键 Start Tml Server 启动socket服务 以当前的tml为服务入口。 
- ![start](/vscode-start-tml.gif)  
- 
+ < img :src="$withBase('/vscode-start-tml.gif')" alt="start">
+
 ## 4 其他  
 ### 4.1 关于server插件
 ide 启动server 后，app 测试包通过udp协议访问到ide，就行开发测试，无需为app 打包特定的 ip 地址。  
