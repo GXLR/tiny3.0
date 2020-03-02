@@ -4,7 +4,7 @@
 为统一规范，方便开发人员，以下对tiny工程结构作出约定。
 
 ## 2 目录结构    
- < img :src="$withBase('/tml-doc.png')" alt="doc">
+ <img :src="$withBase('/tml-doc.png')" alt="doc">
 
 ## 3 说明  
 ### 3.1 advert   
@@ -15,11 +15,11 @@ commonJs存放公共js方法，存在这个文件夹中的js不允许随意修�
 config文件夹中存放的是配置文件，字体，多语言等文件  
 #### 3.3.1 api  
 api文件夹为接口规范存放的目录，所有接口规范文件都在此文件夹中。  
- < img :src="$withBase('/tml-doc-api.jpg')" alt="api">
+ <img :src="$withBase('/tml-doc-api.jpg')" alt="api">
 
 #### 3.3.2 fonts  
 fonts文件夹存放字体集  
- < img :src="$withBase('/tml-doc-fonts.jpg')" alt="fonts">
+ <img :src="$withBase('/tml-doc-fonts.jpg')" alt="fonts">
 
 #### 3.3.4 lang 
 多语言文件夹.其中多语言配置已json文件形式表现。
@@ -36,7 +36,7 @@ fonts文件夹存放字体集
   "language":"中文"
 }
  ```   
- < img :src="$withBase('/tml-doc-lang.jpg')" alt="lang">
+ <img :src="$withBase('/tml-doc-lang.jpg')" alt="lang">
 
 #### 3.3.5 pageControls
 页面流配置文件    
@@ -57,7 +57,7 @@ tml页面文件，一个完成tml页面由**5个文件**组成，分别为：
 * page.js
 * pagePagecol.xml  
 
- < img :src="$withBase('/tml-doc-page.jpg')" alt="page">
+ <img :src="$withBase('/tml-doc-page.jpg')" alt="page">
 
 ### 3.7.1 nav.tml
 tiny启动入口。

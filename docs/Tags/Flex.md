@@ -20,7 +20,7 @@
     column：主轴为垂直方向，起点在上沿。
     column-reverse：主轴为垂直方向，起点在下沿。
 ###   效果
- < img :src="$withBase('/direction.png')" alt="direction">
+ <img :src="$withBase('/direction.png')" alt="direction">
 
 ### 二.flex-wrap
 
@@ -32,7 +32,7 @@
     wrap：换行，第一行在上方。 
     wrap-reverse：换行，第一行在下方。 
 ###   效果
- < img :src="$withBase('/wrap.png')" alt="wrap">
+ <img :src="$withBase('/wrap.png')" alt="wrap">
 
 ### 三.flex-flow
 
@@ -43,7 +43,7 @@
     <flex-direction> 为flex-direction 属性
     <flex-wrap>为flex-wrap属性
 ###   效果
- < img :src="$withBase('/flow.png')" alt="flow">
+ <img :src="$withBase('/flow.png')" alt="flow">
 
 ### 四.justify-content
 
@@ -58,7 +58,7 @@
     space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。
     space-evenly: 平分
 ###   效果
- < img :src="$withBase('/justify-content.png')" alt="justify-content">
+ <img :src="$withBase('/justify-content.png')" alt="justify-content">
 
 ### 五.align-items
 
@@ -72,7 +72,7 @@
     baseline: 项目的第一行文字的基线对齐。
     stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。
 ###   效果
- < img :src="$withBase('/align-items.png')" alt="align-items">
+ <img :src="$withBase('/align-items.png')" alt="align-items">
 
 ### 六.align-content
 
@@ -87,7 +87,7 @@
     space-around：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。
     stretch（默认值）：轴线占满整个交叉轴。
 ###   效果
- < img :src="$withBase('/align-content.png')" alt="align-content">
+ <img :src="$withBase('/align-content.png')" alt="align-content">
 ### Flex的5大项目属性：
 
         1.flex-grow
@@ -105,7 +105,7 @@
     如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。
     如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。
 ###   效果
- < img :src="$withBase('/grow.png')" alt="grow">
+ <img :src="$withBase('/grow.png')" alt="grow">
 
 ### 二.flex-shrink
 
@@ -116,7 +116,7 @@
     如果一个项目的flex-shrink属性为0，其他项目都为1，则空间不足时，前者不缩小。
     负值对该属性无效。
 ###   效果
- < img :src="$withBase('/shrink.png')" alt="shrink">
+ <img :src="$withBase('/shrink.png')" alt="shrink">
 
 ### 三.flex-basis
 
@@ -126,7 +126,7 @@
     .item { flex-basis: <length> | auto; /* default auto */ }
     它可以设为跟width或height属性一样的值（比如350px），则项目将占据固定空间。
 ###   效果
- < img :src="$withBase('/basis.png')" alt="basis">
+ <img :src="$withBase('/basis.png')" alt="basis">
 
 ### 四.flex
 
@@ -149,6 +149,6 @@
     baseline: 项目的第一行文字的基线对齐。
     stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。
 ###   效果
- < img :src="$withBase('/align-self.png')" alt="align-self">
+ <img :src="$withBase('/align-self.png')" alt="align-self">
 
 ## 实例Demo http://p.mtiny.cn:8000/TinyAndroid3.0/TmlExample
