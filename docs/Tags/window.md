@@ -233,6 +233,21 @@ Window 对象为tiny 内置对象，提供一些程序设备相关的基本操�
       <td>选择联系人</td>
       <td></td>
    </tr>
+      <tr>
+      <td><a href='#41F'>saveValue</a></td>
+      <td>保存全局变量</td>
+      <td>当数据命名为"$pub.value"或者"$local.value"，与数据绑定具有联动效果</td>
+   </tr>
+   <tr>
+      <td><a href='#42F'>loadValue</a></td>
+      <td>加载全局变量</td>
+      <td>当数据命名为"$pub.value"或者"$local.value"，与数据绑定具有联动效果</td>
+   </tr>
+   <tr>
+      <td><a href='#43F'>removeValue</a></td>
+      <td>移除全局变量</td>
+      <td>当数据命名为"$pub.value"或者"$local.value"，与数据绑定具有联动效果</td>
+   </tr>
 </table>
  
 ***
@@ -848,6 +863,87 @@ eg:
         console.log(opt.name);        
     }, function() {
     });
+    
+***
+
+####  <a name='41F'>saveValue</a>
+
+根据键值对，保存数据到客户端的内存中/本地。
+
+**方法：**
+
+	Window.saveValue(key, value)
+
+##### params
+
+* key:存储key值
+* value:存储value值
+
+##### 注意事项  
+
+当key 为**$pub.**或者**$local** 标识，这个值会与数据绑定中Data.js中的值互通，在数据绑定中改变这个值，会影响JS的取值，在JS中赋值会影响Data.JS的取值。  
+
+key申明时没有标示以上开头字段则该值表包在内存中。    
+  
+**举例：**  
+
+	在frame中赋值，在页面中取值。   
+	
+	nav.tml 代码片段  
+	<frame>
+    		<head>
+        		<script src="nav.js"/>
+    		</head>
+    		<navigator id="nav">
+        		<page url="entrylist/entrylist.tml"  hidesStatusBar="true"/>
+    		</navigator>
+	</frame>  
+	
+	nav.js 代码片段  
+	Window.saveValue("$pub.value","the value save in frame");
+	
+	在取值页面Data.js 中代码片段
+	var DATA = {
+    		pubValue :"$pub.value",
+   		value :"",
+    		a: 1,
+    		b: 2
+	}
+	  
+	在tml中片段 
+	<label value="pub = {{pubValue}} " class="labelBtn" />
+	
+	运行结果  
+	这个label会显示成 pub = the value save in frame
+	
+***
+
+####  <a name='42F'>loadValue</a>
+
+根据键值对，从客户端的内存/本地中加载数据。
+
+**方法：**
+
+	Window.loadValue(key)
+
+##### params
+
+* key:存储key值	
+	
+***
+
+####  <a name='43F'>removeValue</a>
+
+根据键值对，从客户端的内存/本地中移除数据
+
+**方法：**
+
+	Window.removeValue(key)
+
+##### params
+
+* key:存储key值
+* flag：true沙盒，false内存
 
 
 
