@@ -27,7 +27,8 @@ module.exports = {
                     '/Tags/paging',
                     '/Tags/image',
                     '/Tags/select',
-                    '/Tags/webview'
+                    '/Tags/webview',
+                    '/Tags/tabBar'
                 ]
             },
             {

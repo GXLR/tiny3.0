@@ -72,7 +72,7 @@ npm init，按照步骤初始化项目配置信息
 
 1)、安装tinypack，tiny3.0的IDE工具, npm install tinypack -D
 
-2)、在tml后缀的文件下上下文菜单中，使用Start Tml Server3.0，即可像以前一样使用IDE热开发
+2)、在tml后缀的文件下上下文菜单中，使用Start Tml Server3.0，即可像以前一样使用IDE热开发  
 ![avatar](/IDE.png)
 
 #### nodeJS实例
@@ -80,6 +80,29 @@ npm init，按照步骤初始化项目配置信息
 gitlab:https://p.mtiny.cn:9443/Tiny3.0/TmlExample
 
 clone之后，使用npm install安装依赖包
+
+#### 前端组件化开发
+
+**1.发布组件包**
+
+![avatar](component.png)
+
+**component格式必须保持一致**,name及dom均为关键字，不可更改
+
+**2.引用组件包**
+
+* 使用npm install tmlDemo --save，其中tmlDemo为你之前发布的前端库名称
+* 在tml中添加引用的组件包名
+
+![avatar](component2.png)
+
+* 在对应的js中添加引用的组件名
+
+![avatar](component3.png)
+
+**3.注意事项**
+
+组件内不能套用组件
 
 #### 注意事项
 
