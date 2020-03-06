@@ -58,6 +58,11 @@ element对象定义了tml文档中的节点结构。
       <td>获取所有子项</td>
       <td></td>
    </tr>
+   <tr>
+      <td><a href='#10F'> getData </a></td>
+      <td>imgae获取图片base64</td>
+      <td></td>
+   </tr>
   
 </table>
 
@@ -351,5 +356,12 @@ element.saveImage()
 获取所有子项
 
 	element.childNodes()
+	
+***
+#### <a name='10F'> getData </a>
+
+image获取图片base64
+
+	element.getData()
 
 
