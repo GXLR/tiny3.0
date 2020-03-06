@@ -151,4 +151,17 @@
 ###   效果
  <img :src="$withBase('/align-self.png')" alt="align-self">
 
+
+## flex新用法
+
+## flex-position
+    Flex布局方式，相对布局，绝对布局。
+##   语法
+    .item { flex-position: relative | absolute ; }
+######  flex-position的值有: 
+    relative：相对布局。
+    absolute：绝对布局。
+##   效果
+ <img :src="$withBase('/flex-position.png')" alt="flex-position">
+
 ## 实例Demo http://p.mtiny.cn:8000/TinyAndroid3.0/TmlExample

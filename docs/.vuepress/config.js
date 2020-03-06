@@ -43,7 +43,8 @@ module.exports = {
                     '/Tags/element',
                     '/Tags/request',
                     '/Tags/Multipicker',
-                    '/Tags/actionsheet'
+                    '/Tags/actionsheet',
+                    '/Tags/TouchID'
                 ]
             },
             {
